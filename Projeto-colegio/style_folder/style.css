@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
 *{
     margin: 0px;
     padding: 0px;
@@ -24,33 +25,39 @@ main{
     padding: 10px;
     position: fixed;
     z-index: 1;
-    padding-left: calc(82px + 20px);    
+    padding-left: calc(82px + 20px);
+  
 
 }
 
 main > section#texts{
     display: flex;
-    background-color: #aaaebcb8;
-    color: white;
+    background-color: #e3e9f7;;
+    color: rgb(52, 52, 52);
     flex-direction: column;
     padding: 10px;
     text-align: justify;
     text-justify: distribute;
     align-items: center;
+    box-shadow: inset 6px 6px rgba(109, 195, 158, 0.502);
+    
 }
 
-section#about h1{
+
+h1{
     font-family:  'Poppins', sans-serif;
     font-size: 1.8rem;
     text-indent: 15px;
     padding-bottom: 10px;
-    
+    padding-top: 5px;
+
 }
 
 section#text-about p{
     text-indent: 15px;
     max-width: 510px;
     min-width: min-content;   
+    padding: 4px;
 }
 
 section#text-about a{
@@ -218,3 +225,32 @@ section#text-about a:hover{
 
 /*  Fim da SideBar  */
 
+
+
+@media screen and (max-width: 600px){
+    main > section#texts{
+        display: flex;
+        background-color: #e3e9f7;;
+        color: rgb(52, 52, 52);
+        flex-direction: column;
+        padding: 10px;
+        text-align: justify;
+        text-justify: distribute;
+        align-items: center;
+        box-shadow: inset 4px 3px rgba(0, 0, 0, 0.502);
+        
+    }
+    
+    
+    section#about h1{
+        font-family:  'Poppins', sans-serif;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+    
+    section#text-about p{
+        text-indent: 15px;
+        max-width: 510px;
+        min-width: min-content;   
+    }
+}
