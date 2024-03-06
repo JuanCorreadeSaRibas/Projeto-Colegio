@@ -26,6 +26,7 @@ main{
     position: fixed;
     z-index: 1;
     padding-left: calc(82px + 20px);
+    display: flex;
   
 }
 
@@ -38,19 +39,27 @@ main > section#texts{
     text-align: justify;
     text-justify: distribute;
     align-items: center;
-    box-shadow: inset 6px 6px rgba(109, 195, 158, 0.502);
+    box-shadow: inset 6px 6px rgba(109, 195, 158, 0.288);
     height: 100vh;
-
+    
 }
 
 
 h1{
     font-family:  'Poppins', sans-serif;
     font-size: 1.8rem;
-
     padding-bottom: 10px;
     padding-top: 5px;
+    text-indent: 5px;
+}
 
+section#text-about{
+    direction: ltr;
+    
+}
+
+section#text-about ul{
+    padding-left: 20px;
 }
 
 section#text-about p{
@@ -61,6 +70,7 @@ section#text-about p{
 }
 
 section#text-about a{
+    padding-top: 10px;
     text-decoration: none;
     font-weight: bold;
     color: #414247;
