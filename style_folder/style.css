@@ -108,6 +108,7 @@ section#texts section:nth-last-child(-n + 1) ul{
     transition: all .5s;
     min-width: 82px;
     z-index: 2;
+    position: fixed;
 }
 
 #sidebar_content{
