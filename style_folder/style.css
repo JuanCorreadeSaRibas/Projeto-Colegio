@@ -17,24 +17,81 @@ body{
     display: flex;
     min-height: 100vh;
    /* background-color: #e3e9f7;*/
-   background-image: linear-gradient(90deg, #d7e0f5, #ddffe7);
+   background-image: linear-gradient(90deg, #d1daf0, #e2f8e8);
 }
 
 
 main{
     padding: 10px;
-    position: fixed;
+    position: relative;
     z-index: 1;
-    padding-left: calc(82px + 20px);
+    padding-left: calc(82px + 15px);
     display: flex;
-  
+    align-items: center;
+
+    
 }
 
-section#foto-header{
-    background-image: url('../imagens/logo.jpg');
+section#header{
+    width: 92.7%;
+    background-color: #f0f8ff;  
+    width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+}
+
+.tab-buttons{
+    display: flex;
+    gap: 6px;
+}
+
+.tab-btn{
     width: 100%;
-    height: 500px;
-    border: 1px solid rebeccapurple;
+    color: #020617;
+    border: none;
+    background-color: #f0f8ff;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 500;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.tab-btn.active{
+    background-color: #c7d2fe;
+}
+
+.tab-btn:hover{
+    background-color: #a5b4fc;
+}
+
+
+.content{
+    display: none;
+}
+
+.content.show{
+    display: flex;
+    gap: 14px;
+    background-color: #c7d2fe;
+    border: 0px 0px 8px 8px;
+    padding: 16px;
+}
+
+.content-img{
+    width: 50%;
+    width: 250px;
+}
+
+
+
+section#header > h1{
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #020617;
 }
 
 
@@ -190,5 +247,3 @@ section#foto-header{
 }
 
 /*  Fim da SideBar  */
-
-
