@@ -30,69 +30,11 @@ main{
   
 }
 
-main > section#texts{
-    display: flex;
-    background-color: #e3e9f7;;
-    color: rgb(52, 52, 52);
-    flex-direction: column;
-    padding: 10px;
-    text-align: justify;
-    text-justify: distribute;
-    align-items: center;
-    box-shadow: inset 6px 6px rgba(109, 195, 158, 0.288);
-    height: 100vh;
-    
-}
-
-
-h1{
-    font-family:  'Poppins', sans-serif;
-    font-size: 1.8rem;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    text-indent: 5px;
-}
-
-section#text-about{
-    direction: ltr;
-    
-}
-
-section#text-about ul{
-    padding-left: 20px;
-}
-
-section#text-about p{
-    text-indent: 15px;
-    max-width: 500px;
-    min-width: min-content;   
-    padding: 4px;
-}
-
-section#text-about a{
-    padding-top: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #414247;
-
-}
-
-section#text-about a:hover{
-    text-decoration: underline;
-    
-    cursor: pointer;
-    color: #484d5c;
-    text-shadow: 1px 1px rgba(100, 100, 100, 0.416);
-
-    transition:  all .4s;
-
-}
-
-
-
-section#texts section:nth-last-child(-n + 1) ul{
-    list-style: disc inside ;
-    list-style-image: linear-gradient(90deg, rgba(108, 108, 108, 0.653), rgba(128, 128, 128, 0.598));
+section#foto-header{
+    background-image: url('../imagens/logo.jpg');
+    width: 100%;
+    height: 500px;
+    border: 1px solid rebeccapurple;
 }
 
 
@@ -232,11 +174,11 @@ section#texts section:nth-last-child(-n + 1) ul{
 }
 
 #sidebar.open-sidebar{
-    min-width: 15%;
+    min-width: 10%;
 }
 
 #sidebar.open-sidebar .item-description{
-    width: 150px;
+    width: 130px;
 
     height: auto;
 
@@ -250,30 +192,3 @@ section#texts section:nth-last-child(-n + 1) ul{
 /*  Fim da SideBar  */
 
 
-
-@media screen and (max-width: 600px){
-    main > section#texts{
-        display: flex;
-        background-color: #e3e9f7;;
-        color: rgb(52, 52, 52);
-        flex-direction: row;
-        padding: 10px;
-        text-align: justify;
-        text-justify: distribute;
-        align-items: center;
-        box-shadow: inset 4px 3px rgba(0, 0, 0, 0.502);
-        
-    }
-    
-    section#about h1{
-        font-family:  'Poppins', sans-serif;
-        font-size: 1.5rem;
-        padding-bottom: 10px;
-    }
-    
-    section#text-about p{
-        text-indent: 15px;
-        max-width: 510px;
-        min-width: min-content;   
-    }
-}
