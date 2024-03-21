@@ -28,7 +28,7 @@ main{
     padding-left: calc(82px + 15px);
     display: flex;
     align-items: center;
-
+    width: 100%;
     
 }
 
@@ -67,7 +67,6 @@ section#header{
     background-color: #a5b4fc;
 }
 
-
 .content{
     display: none;
 }
@@ -89,11 +88,16 @@ section#header{
 
 section#header > h1{
     font-size: 1.5em;
-    font-weight: 700;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
     color: #020617;
+    text-align: center;
 }
 
+section#header > h2{
+
+    font-weight: 400;
+
+}
 
 /*  Começo da Sidebar  */
 #sidebar{
