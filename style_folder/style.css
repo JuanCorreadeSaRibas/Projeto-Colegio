@@ -33,9 +33,16 @@ main{
     padding-left: calc(82px + 15px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     
+}
+
+section#welcome{
+    width: 500px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
 }
 
 section#info{
